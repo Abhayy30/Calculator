@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     MaterialButton buttonAC;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) { //buttons linkage
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         solutiontv=findViewById(R.id.solution_textview);
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onClick(View v) { //asssigning button
+    public void onClick(View v) {
 
         Object view;
         MaterialButton button=(MaterialButton) v;
