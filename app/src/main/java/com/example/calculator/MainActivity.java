@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v) { //onclick
 
         Object view;
         MaterialButton button=(MaterialButton) v;
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             resulttv.setText(finalResult);
         }
     }
-    String getResult(String data) //evaluation
+    String getResult(String data)
     {
         try { //caculation_part
             Context context=Context.enter();
