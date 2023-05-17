@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         assignId(buttonequals,R.id.button_equals);
     }
 
-    void assignId(MaterialButton btn,int id)
+    void assignId(MaterialButton btn,int id) //button
     {
         btn=findViewById(id);
         btn.setOnClickListener(this);
@@ -60,13 +60,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String buttonText=button.getText().toString();
         String datacalc=solutiontv.getText().toString();
 
-        if(buttonText.equals("AC")) //all_clear_button
+        if(buttonText.equals("AC"))
         {
             solutiontv.setText("");
             resulttv.setText("0");
             return;
         }
-        if (buttonText.equals("=")) //equal to button
+        if (buttonText.equals("="))
         {
             solutiontv.setText(resulttv.getText());
             return;
